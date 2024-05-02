@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(to top, #1c0c45, black);
+}
+
+.navbar{
+    background-image: linear-gradient(to bottom, #AA27FF, #4d176a, #1c0c45, black);
+    display: flex;
+    height: 100px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    width: 100%;
+}
+
+.navbar:hover{
+    box-shadow: 0px 25px 100px #ffa600;
+    transition: 500ms;
+}
+
+.t-image{
+    margin-left: 10%;
+    margin-right: 1%;
+}
+
+.logo{
+    flex: 5%;
+    color: #FFF75B;
+    font-family: "Jersey 25", sans-serif;
+    font-size: 30px;
+    text-shadow: 0px 0px 25px #ffa600;
+}
+
+
+.menu{
+    flex: 26%;
+    padding: 10px;
+}
+
+.menu a{
+    color: #FFF75B;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.menu a:hover{
+    text-shadow: 0px 0px 5px #ffa600;
+    background-color: #AA27FF;
+    border-radius: 25px;
+    border: 1px solid #ffa600;
+    transition: 500ms;
+    box-shadow: 0px 0px 25px #ffa600;
+}
+
+.menu2{
+    display: flex;
+    margin-right: 10%;
+    flex: 10%;
+}
+
+.menu2{
+    display: flex;
+    justify-content: right;
+}
+
+.menu2 a{
+    width: 80px;
+}
+
+.menu2 a:hover{
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+.menu2 img{
+    width: 50%;
+}
+
+.header{
+    margin-left: 10%;
+    width: 80%;
+    line-height: 2px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.header h2{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 80px;
+    color: #FFF75B;
+    text-shadow: 0px 0px 25px #ffa600;
+}
+
+.header p{
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: white;
+    font-weight: bold;
+}
+
+.header b{
+    font-size: 25px;
+}
+
+.city{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.city img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.city img:hover{
+    box-shadow: 0px 0px 100px #ffa600;
+    transition: 500ms;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-new{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: #FFF75B;
+    text-shadow: 0px 0px 25px #ffa600;
+    text-transform: uppercase;
+}
+
+.card{
+    flex: 26%;
+    margin-left: 1%;
+    border: 1px solid #ffa600;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #AA27FF;
+    box-shadow: 0px 0px 50px #ffa600;
+    transition: 500ms;
+}
+
+.card:hover .content{
+    display: none;
+}
+
+.card:hover .content-oculto{
+    display: block;
+}
+
+.content-oculto{
+    display: none;
+}
+
+footer{
+    margin-top: 200px;
+    background-image: linear-gradient(to top, black, #1c0c45, #4d176a);
+    border-top: 5px solid #ffa600;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h3{
+    color: #FFF75B;
+    font-family: "Jersey 25", sans-serif;
+    font-size: 40px;
+    text-shadow: 0px 0px 25px #ffa600;
+}
+
+footer p, b{
+    color: white;
+    font-size: 20px;
+}
+
+footer:hover{
+    box-shadow: 0px 0px 100px #ffa600;
+    transition: 500ms;
+}
+
+@media screen and (max-width: 1005px){
+    .navbar{
+        position: relative;
+        margin-top: 0px;
+        flex: 80%;
+        text-align: center;
+    }
+    .t-image{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu2{
+        display: none;
+    }
+    .city img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .header h2{
+        font-size: 50px;
+    }
+    .card{
+        flex: 100%;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header p{
+        font-size: 20px;
+    }
+    .header b{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .header h2{
+        font-size: 40px;
+    }
+}
